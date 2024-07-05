@@ -1,0 +1,86 @@
+.category-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(24, 24, 24, 0.92);
+  border-radius: 0 0 15px 15px;
+  padding: 30px;
+  padding-left: 50px;
+  max-width: 1500px;
+  width: 100%;
+}
+.category-form form {
+  padding: 30px;
+}
+.category-form .category-form-title {
+  color: rgb(255, 79, 79);
+  font-size: 22px;
+  font-weight: bold;
+}
+.category-form .category-form-value-title {
+  font-size: 17px;
+  display: inline-block;
+  color: rgb(255, 225, 169);
+  margin-bottom: 10px;
+}
+.category-form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgba(240, 248, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 0, 0.35);
+  color: whitesmoke;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgba(240, 248, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 0, 0.35);
+  color: whitesmoke;
+}
+
+.modal-content{
+  border: 1px solid red;
+}
+.category-form input:hover {
+  transition: 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 0, 0.848);
+}
+.category-form input:focus {
+  transition: 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 0, 0.848);
+}
+.category-form button {
+  transition: 0.3s ease;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 17px;
+  background-color: rgba(255, 166, 0, 0.674);
+}
+.category-form button:hover {
+  transition: 0.3s ease;
+  background-color: rgba(255, 166, 0, 0.893);
+}
+.category-form .category-btn {
+  transition: 0.4s ease;
+  font-size: 20px;
+  max-width: 200px;
+  width: 100%;
+  margin: 20px 0;
+  transform: scale(1, 1);
+  background: linear-gradient(45deg, rgb(232, 123, 0), rgb(198, 221, 0));
+  font-weight: 700;
+  border-bottom: 0px solid rgba(255, 255, 0, 0.35);
+}
+.category-form .category-btn:hover {
+  transition: 0.4s ease;
+  box-shadow: 0px 0px 6px 3px rgba(255, 214, 0, 0.2);
+  transform: scale(1.05, 1.05);
+}
+.category-form .recipe-name {
+  display: inline-block;
+}

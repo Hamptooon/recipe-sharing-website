@@ -1,0 +1,73 @@
+@charset "UTF-8";
+.delete-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  max-height: 510px;
+  max-width: 700px;
+  overflow: auto;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(173, 173, 0, 0.641);
+}
+.delete-form .delete-elem {
+  display: flex;
+  max-width: 100%;
+  min-height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  transition: 0.3s ease;
+  position: relative;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 17px;
+  background-color: rgba(255, 166, 0, 0.674);
+}
+.button:hover {
+  transition: 0.3s ease;
+  background-color: rgba(255, 166, 0, 0.893);
+}
+.button img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 5px;
+  bottom: 4px;
+}
+
+.delete-btn {
+  transition: 0.4s ease;
+  font-size: 20px;
+  max-width: 200px;
+  width: 100%;
+  transform: scale(1, 1);
+  background: linear-gradient(45deg, rgb(232, 123, 0), rgb(198, 221, 0));
+  font-weight: 700;
+  border-bottom: 0px solid rgba(255, 255, 0, 0.35);
+}
+.delete-btn:hover {
+  transition: 0.4s ease;
+  box-shadow: 0px 0px 6px 3px rgba(255, 214, 0, 0.2);
+  transform: scale(1.05, 1.05);
+}
+
+/* Для Internet Explorer/Edge */
+/* Цвет фона дорожки скролла */
+/* Для WebKit (Chrome, Safari) */
+/* Цвет фона дорожки скролла */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Цвет ползунка скролла */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 179, 0, 0.721);
+  border-radius: 15px;
+}

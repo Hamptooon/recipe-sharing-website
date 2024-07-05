@@ -1,0 +1,205 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&family=Rubik:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: "Rubik", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(0, 0, 0, 0.96);
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.login-content video {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.15;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.login-content input {
+  color: whitesmoke;
+}
+
+.log-header {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 25px;
+}
+
+.log-container {
+  z-index: 888;
+  max-width: 500px;
+  min-height: 300px;
+  margin: 0 auto;
+  margin-top: 140px;
+  padding: 20px;
+  text-align: center;
+}
+
+.log-input {
+  background-color: rgba(246, 255, 255, 0);
+  font-size: 20px;
+  color: whitesmoke;
+  border-bottom: 2px solid rgba(253, 156, 0, 0.2901960784);
+  border-radius: 2px;
+  width: 90%;
+  margin: 0 0 25px 0;
+  padding: 15px;
+  padding-bottom: 3px;
+}
+
+.log-input:focus {
+  border-bottom: 2px solid #fdd700;
+  /* box-shadow: 0 0 8px 5px rgba(255, 0, 0, 0.5);  */
+  transition: all 0.3s ease; /* Плавный переход для свечения */
+}
+
+button {
+  transition: 0.5s ease;
+  transform: scale(1, 1);
+  font-size: 20px;
+  width: 90%;
+  padding: 20px;
+  background: linear-gradient(45deg, rgb(232, 123, 0), rgb(198, 221, 0));
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 0.5s ease;
+  box-shadow: 0px 0px 6px 3px rgba(255, 214, 0, 0.2);
+  transform: scale(1.05, 1.05);
+}
+
+.logo-container {
+  z-index: 888;
+  padding: 20px;
+  text-align: center;
+}
+.logo-container .brand__title {
+  transition: 0.3s ease;
+  font-size: 25px;
+  font-weight: bold;
+}
+.logo-container .brand__title .text__orange {
+  color: orange;
+}
+.logo-container .brand__title .text__yellow {
+  color: yellow;
+}
+.logo-container .brand__title:hover {
+  transition: 0.3s ease;
+  font-size: 26px;
+}
+
+.log-invite {
+  margin: 15px;
+  font-size: 20px;
+}
+
+.invite-link {
+  color: rgb(255, 204, 0);
+}
+
+.alert {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 90%;
+  border: 1px solid rgb(255, 136, 0); /* Red */
+  color: rgb(255, 0, 0);
+  margin-bottom: 15px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: #fdec00;
+  font-weight: bold;
+  float: right;
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: rgb(255, 85, 0);
+}

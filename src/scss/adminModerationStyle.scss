@@ -1,0 +1,165 @@
+body{
+    font-weight: normal;
+}
+.moderate-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-height: 510px; 
+    max-width: 450px;
+    overflow: auto; 
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(173, 173, 0, 0.641);
+    align-items: center;
+    a{
+        transition: .3s ease;
+        color: whitesmoke;
+        margin-bottom: 10px;
+        &:hover{
+            transition: .3s ease;
+            color: yellow;
+        }
+    }
+}
+
+.moderate-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(24, 24, 24, 0.92);
+    border-radius: 0 0 15px 15px;
+    padding: 30px;
+    padding-left: 50px;
+    max-width: 1500px;
+    width: 100%; 
+    .recipe-info{
+        padding: 0 20px 0 20px;
+        .recipe-info-title{
+            
+            margin-top: 20px;
+            font-size: 17px;
+            color: rgb(255, 225, 169);
+            margin-bottom: 10px;
+        }
+        .recipe-info-name{
+            margin: 10px 0 20px 0;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .recipe-info-introduction{
+            padding: 10px;
+            font-size: 20px;
+            line-height: 1.4em;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: auto;
+            background-color: rgba(240, 248, 255, 0);
+            border: 1px solid rgb(255, 255, 0, 0.35);
+            color: whitesmoke;
+            min-width: 47%;
+            min-height: 200px;
+            max-height: 400px;
+        }
+        .photo-file-download{
+            position: relative;
+        }
+        .file-download{
+            display: block;
+            position: absolute;
+            background-color: red;
+            border-radius: 10px;
+            max-width: 300px;
+            opacity: 0;
+            cursor: pointer;
+            min-height: 300px;
+            bottom: -20px;
+    
+        }
+        .photo-download{
+            display: flex;
+            position: relative;
+            cursor: pointer;
+            background-color: rgb(59, 59, 59);
+            border-radius: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 500px;
+            margin: 15px 0;
+            
+            .photo-download-img{
+                border-radius: 10px;
+                max-width: inherit;
+            }
+        }
+        ul{
+            padding: 10px;
+            li{
+                padding-left: 20px;
+                position: relative;
+                margin-bottom: 10px;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top:7px;
+                    left: 0;
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+                    background-color: rgb(255, 205, 112);
+                }
+               
+            }
+        }
+        .recipe-info-steps{
+            padding: 10px;
+            
+            .recipe-info-step{
+                line-height: 1.4em;
+                margin-bottom: 20px;
+                .recipe-info-step-title{
+                    margin-bottom: 10px;
+                    color: rgb(210, 197, 114);
+                }
+    
+            }
+        }
+        
+    }
+    .moderate-container-title{
+        color: rgb(255, 193, 79);
+        font-size: 22px;
+        font-weight: bold;
+    }
+    form{
+        text-align: center;
+    }
+    .moderate-btns{
+
+        margin: 0 auto;
+        .moderate-btn{
+            transition:  .4s ease;
+            font-size: 20px;
+            max-width: 150px;
+            width: 100%;
+            margin-right: 20px;
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            transform: scale(1, 1);
+            background: linear-gradient(45deg, rgb(232, 123, 0), rgb(198, 221, 0));
+            font-weight: 700;
+            border-bottom: 0px solid rgb(255, 255, 0, 0.35);
+            &:hover{
+                transition:  .4s ease;
+                box-shadow: 0px 0px 6px 3px rgba(255, 214, 0, 0.2);
+                transform: scale(1.05, 1.05);
+            }
+        }
+
+    }
+    
+    
+}

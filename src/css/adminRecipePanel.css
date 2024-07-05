@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  font-weight: bold;
+  background-color: rgba(22, 22, 22, 0.561);
+  border-bottom: 1px solid rgba(255, 255, 0, 0.093);
+}
+
+.recipe-panel {
+  font-weight: bold;
+  margin-top: 100px;
+  margin-left: 180px;
+  padding: 50px;
+  max-width: 1500px;
+  height: 200px;
+  width: 100%;
+  background-color: rgba(28, 18, 0, 0.575);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+.recipe-panel .recipe-panel__title {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: rgb(255, 235, 82);
+}
+.recipe-panel .recipe-panel__nav {
+  display: flex;
+}
+.recipe-panel .recipe-panel__nav a {
+  position: relative;
+  color: whitesmoke;
+  margin-left: 30px;
+  margin-bottom: 3px;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+.recipe-panel .recipe-panel__nav a::before {
+  transition: 0.3s ease;
+  content: "";
+  opacity: 0;
+  position: absolute;
+  background: rgb(234, 148, 0);
+  width: 0%;
+  height: 3px;
+  top: 100%;
+  left: 50%;
+}
+.recipe-panel .recipe-panel__nav a:hover::before {
+  transition: 0.3s ease;
+  opacity: 1;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}

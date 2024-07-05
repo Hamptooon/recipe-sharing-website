@@ -1,0 +1,214 @@
+@charset "UTF-8";
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.recipe-item {
+  width: 25%;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 255, 13, 0.455);
+  overflow: hidden;
+  margin: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.recipe-item img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.recipe-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(127, 76, 0, 0.631);
+  color: white;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+}
+
+.recipe-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.recipe-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Определите количество строк, которые вы хотите отобразить */
+  -webkit-box-orient: vertical;
+}
+
+.recipe-item:hover .recipe-content {
+  opacity: 1;
+}
+
+.product-card {
+  max-width: 400px;
+  max-height: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px;
+  padding: 12px;
+  border-radius: 15px;
+}
+.product-card a {
+  
+}
+
+.product-card__image {
+
+  transition: 0.3s ease;
+  transform: scale(1, 1);
+  width: 100%;
+  height: 90%;
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 16px;
+}
+.product-card__image:hover {
+  transition: 0.3s ease;
+  transform: scale(1.05, 1.05);
+}
+
+.product-card__title {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #e7d000;
+  margin-bottom: 8px;
+}
+
+.product-card__description {
+  font-size: 17px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Максимальное количество отображаемых строк */
+  -webkit-box-orient: vertical;
+  max-height: 3.6em;
+}
+
+.product-card__button {
+  transition: 0.3s ease;
+  transform: scale(1, 1);
+  text-transform: uppercase;
+  background-color: #d89e00;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.product-card__button:hover {
+  transition: 0.3s ease;
+  background-color: #d89e00;
+  transform: scale(1.05, 1.05);
+}
+
+.filter-form {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.0901960784);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 100px;
+}
+.filter-form form {
+  display: flex;
+  align-items: end;
+  max-width: 1500px;
+  width: 100%;
+  justify-content: space-around;
+}
+.filter-form form input {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.filter-form select,
+.filter-form input[type=number],
+.filter-form input[type=text] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.filter-form button {
+  padding: 8px 15px;
+  background-color: #917b00;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.filter-form button:hover {
+  background-color: #e7d000;
+}
+
+.multiselect {
+  display: inline-block;
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  padding: 5px;
+  z-index: 1000;
+  display: none;
+  width: 200px;
+  position: absolute;
+  text-align: left;
+  background-color: black;
+  align-items: center;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+  margin-bottom: 5px;
+  background-color: black;
+}
+
+#checkboxes label:hover {
+  background-color: rgba(255, 203, 30, 0.6509803922);
+}
